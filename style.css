@@ -1,35 +1,70 @@
 body{
-    background:white;
+    background:rgb(212, 131, 131);
 }
-.start-btn,.info-box{
+.start_btn,
+.info_box{
     position:absolute ;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 }
-.start-btn button{
-    font-size: 30px;
+.start_btn button{
+    font-size: 25px;
     font-weight: 500;
     color:red;
     padding: 15px 30px;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(247, 239, 239);
     cursor: pointer;
 }
-.info-box{
+
+.info_box{
     width: 540px;
     background: white;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0.9);
 }
-.info-box,.Info-title{
+.info_box .info_title{
     height: 60px;
-    width: 100%;
-    border-bottom: 1px solid black;
+    width: 91%;
+    border-bottom: 1px solid grey;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 25px;
     font-size: 20px;
-    font-weight: 600;
-    border-radius: 5px 5px 0 0;
+    font-weight: 550;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.info_box .info_list{
+  padding: 20px 40px;  
+}
+.info_box .info_list .info{
+    margin: 10px 0;
+    font-size: 20px
+}
+.info_box .info_list .info span{
+    font-weight: 700;
+}
+
+.info_box .buttons{
+    height: 70px;
+    display:flex ;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid grey;
+}
+.info_box .buttons button{
+    margin: 0 5px;
+    height:40px;
+    width:100%;
+    border:15px;
+    background: lightgray;
+    border-radius:5px;
+    color: rgb(82, 79, 79);
+    font-size:20px;
+    font-weight:700;
+    cursor: pointer;
+}
+.buttons button.quit:hover, .buttons button.restart:hover{
+    background: rgb(164, 163, 163);
 }
